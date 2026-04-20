@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Founder's Resource Hub — send a message, subscribe to our newsletter, or suggest a resource for the community.">
+    <meta name="keywords" content="contact founder hub, newsletter signup, startup resources, founder community, feedback">
+    <meta name="author" content="Founder's Resource Hub">
+    <title>Contact | Founder's Resource Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-inner">
+            <div class="logo-wrap">
+                <div class="logo-mark">F</div>
+                <div>
+                    <div class="site-name">Founder's Resource Hub</div>
+                    <div class="site-tagline">Empowering early-stage entrepreneurs</div>
+                </div>
+            </div>
+        </div>
+    </header>
+<nav><ul><li><a href="index.html">Home</a></li><li><a href="tools.html">Tools &amp; Resources</a></li><li><a href="mindset.html">Founder Mindset</a></li><li><a href="glossary.html">Startup Glossary</a></li><li><a href="contact.html" class="active">Contact</a></li></ul></nav>
+
+    <div class="page-hero">
+        <div class="page-hero-inner">
+            <div class="section-label">Contact &amp; Newsletter</div>
+            <h1 class="page-title">Let's connect.</h1>
+            <p class="page-intro">Have a question, a resource suggestion, or just want to say hello? Fill out the form below — you can also subscribe to receive curated founder resources directly in your inbox.</p>
+        </div>
+    </div>
+
+    <main>
+
+        <section class="section contact-layout">
+
+            <!-- LEFT: Info -->
+            <div>
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Whether you are a first-time founder looking for guidance, an educator who wants to share this hub with your community, or someone with a great tool to suggest — we want to hear from you.</p>
+
+                    <div class="contact-detail">
+                        <div class="det-label">Email</div>
+                        <div class="det-value"><a href="mailto:contact@foundershub.com">contact@foundershub.com</a></div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="det-label">Response Time</div>
+                        <div class="det-value">We aim to reply within 2 business days</div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="det-label">External Resource</div>
+                        <div class="det-value"><a href="https://www.startupschool.org" target="_blank">Y Combinator Startup School &rarr;</a></div>
+                    </div>
+
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-item"><h4>Is this site affiliated with Y Combinator?</h4><p>No. Founder's Resource Hub is an independent project. We reference YC resources because they are among the best freely available educational content for founders.</p></div>
+                    <div class="faq-item"><h4>Can I suggest a tool or resource?</h4><p>Absolutely. Use the form and select "Resource Suggestion" as your topic. We review all submissions and add high-quality resources regularly.</p></div>
+                    <div class="faq-item"><h4>Is the newsletter free?</h4><p>Yes, completely free. We will never charge for the newsletter and will never share your email address with third parties.</p></div>
+                    <div class="faq-item"><h4>How often is the newsletter sent?</h4><p>We aim for a bi-weekly cadence — enough to stay useful without filling your inbox. You can unsubscribe at any time.</p></div>
+                </div>
+            </div>
+
+            <!-- RIGHT: Form -->
+            <div>
+                <div class="form-card">
+                    <h3 class="panel-heading">Send a Message or Subscribe</h3>
+                    <p class="form-intro">Fill in all required fields. Your information is used only to respond to your inquiry and, if selected, deliver the newsletter.</p>
+                    <form action="#" method="post">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name *</label>
+                                <input type="text" id="first-name" name="first-name" placeholder="Jane" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name *</label>
+                                <input type="text" id="last-name" name="last-name" placeholder="Smith" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="founder-stage">Founder Stage *</label>
+                            <select id="founder-stage" name="founder-stage" required>
+                                <option value="">Select your current stage...</option>
+                                <option value="idea">Idea stage — still validating</option>
+                                <option value="mvp">Building or just launched MVP</option>
+                                <option value="early">Early traction — finding PMF</option>
+                                <option value="growth">Growing — scaling revenue</option>
+                                <option value="educator">Educator or mentor</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="topic">Topic of Inquiry *</label>
+                            <select id="topic" name="topic" required>
+                                <option value="">Select a topic...</option>
+                                <option value="tools">Tools &amp; Resources</option>
+                                <option value="mindset">Founder Mindset</option>
+                                <option value="glossary">Startup Glossary</option>
+                                <option value="newsletter">Newsletter Subscription</option>
+                                <option value="suggestion">Resource Suggestion</option>
+                                <option value="general">General Question</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" placeholder="Tell us what you are working on, what question you have, or which resource you would like to suggest..." required></textarea>
+                        </div>
+                        <div class="form-group" style="display:flex;align-items:center;gap:10px;">
+                            <input type="checkbox" id="newsletter-opt" name="newsletter-opt" value="yes" style="width:auto;">
+                            <label for="newsletter-opt" style="text-transform:none;letter-spacing:0;font-size:0.9rem;font-weight:400;color:var(--dark-gray);margin:0;">Subscribe me to the Founder's Resource Hub newsletter</label>
+                        </div>
+                        <button type="submit" class="form-submit">Send Message &rarr;</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div class="spotlight">
+            <span class="spotlight-label">Not Sure Where to Start?</span>
+            <blockquote>"The best founders are relentlessly resourceful — and asking the right questions is always the first step."</blockquote>
+            <a href="tools.html">Browse the full startup toolkit &rarr;</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="footer-logo"><div class="logo-mark" style="width:32px;height:32px;font-size:1rem;">F</div>Founder's Resource Hub</div>
+                <p>Empowering early-stage entrepreneurs with curated tools, frameworks, and mindset guidance.</p>
+                <a href="mailto:contact@foundershub.com">&#9993; contact@foundershub.com</a>
+            </div>
+            <div class="footer-col"><h4>Site Pages</h4><ul>
+                <li><a href="index.html">Home</a></li><li><a href="tools.html">Tools &amp; Resources</a></li>
+                <li><a href="mindset.html">Founder Mindset</a></li><li><a href="glossary.html">Startup Glossary</a></li>
+                <li><a href="contact.html">Contact</a></li></ul></div>
+            <div class="footer-col"><h4>External Resources</h4><ul>
+                <li><a href="https://www.startupschool.org" target="_blank">YC Startup School &rarr;</a></li>
+                <li><a href="https://www.indiehackers.com" target="_blank">Indie Hackers &rarr;</a></li>
+                <li><a href="https://www.investopedia.com" target="_blank">Investopedia &rarr;</a></li></ul></div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Founder's Resource Hub. All rights reserved.</p>
+            <a href="mailto:contact@foundershub.com">contact@foundershub.com</a>
+        </div>
+    </footer>
+</body>
+</html>
