@@ -9,13 +9,21 @@
     <title>Home | Founder's Resource Hub</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FOUNDERHUB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-FOUNDERHUB');
+    </script>
 </head>
 <body>
 
-    <header>
+    <header role="banner">
         <div class="header-inner">
             <div class="logo-wrap">
-                <div class="logo-mark">F</div>
+                <div class="logo-mark" aria-label="Founder's Resource Hub logo">F</div>
                 <div>
                     <div class="site-name">Founder's Resource Hub</div>
                     <div class="site-tagline">Empowering early-stage entrepreneurs</div>
@@ -23,7 +31,7 @@
             </div>
         </div>
     </header>
-    <nav>
+    <nav role="navigation" aria-label="Main navigation">
         <ul>
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="tools.html">Tools &amp; Resources</a></li>
@@ -66,7 +74,7 @@
         </div>
     </section>
 
-    <main>
+    <main role="main">
 
         <!-- WELCOME + QUICK NAV -->
         <div class="section welcome-grid">
@@ -185,13 +193,13 @@
         <section class="section bottom-row">
             <div>
                 <h3 class="panel-heading">Featured Video</h3>
-                <!-- HTML5 video tag (required for project) -->
-                <video controls style="display:none;">
+                <!-- HTML5 video tag (required for project — uses a publicly available short sample video) -->
+                <video controls width="100%" style="border-radius:var(--radius-md);box-shadow:var(--shadow-md);margin-bottom:14px;background:var(--dark-gray);" poster="">
                     <source src="video/founder-intro.mp4" type="video/mp4">
                     Your browser does not support the HTML5 video tag.
                 </video>
 
-                <!-- YouTube embed -->
+                <!-- YouTube embed (full-length founder content) -->
                 <div style="border-radius:var(--radius-md);overflow:hidden;box-shadow:var(--shadow-md);">
                     <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
                         <iframe
@@ -241,7 +249,7 @@
 
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="footer-inner">
             <div class="footer-brand">
                 <div class="footer-logo">

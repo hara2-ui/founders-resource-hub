@@ -9,13 +9,21 @@
     <title>Contact | Founder's Resource Hub</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FOUNDERHUB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-FOUNDERHUB');
+    </script>
 </head>
 <body>
 
-    <header>
+    <header role="banner">
         <div class="header-inner">
             <div class="logo-wrap">
-                <div class="logo-mark">F</div>
+                <div class="logo-mark" aria-label="Founder's Resource Hub logo">F</div>
                 <div>
                     <div class="site-name">Founder's Resource Hub</div>
                     <div class="site-tagline">Empowering early-stage entrepreneurs</div>
@@ -23,7 +31,7 @@
             </div>
         </div>
     </header>
-<nav><ul><li><a href="index.html">Home</a></li><li><a href="tools.html">Tools &amp; Resources</a></li><li><a href="mindset.html">Founder Mindset</a></li><li><a href="glossary.html">Startup Glossary</a></li><li><a href="contact.html" class="active">Contact</a></li></ul></nav>
+<nav role="navigation" aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="tools.html">Tools &amp; Resources</a></li><li><a href="mindset.html">Founder Mindset</a></li><li><a href="glossary.html">Startup Glossary</a></li><li><a href="contact.html" class="active">Contact</a></li></ul></nav>
 
     <div class="page-hero">
         <div class="page-hero-inner">
@@ -33,7 +41,7 @@
         </div>
     </div>
 
-    <main>
+    <main role="main">
 
         <section class="section contact-layout">
 
@@ -130,7 +138,7 @@
 
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="footer-inner">
             <div class="footer-brand">
                 <div class="footer-logo"><div class="logo-mark" style="width:32px;height:32px;font-size:1rem;">F</div>Founder's Resource Hub</div>

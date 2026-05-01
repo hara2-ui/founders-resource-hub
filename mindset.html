@@ -9,13 +9,21 @@
     <title>Founder Mindset | Founder's Resource Hub</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FOUNDERHUB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-FOUNDERHUB');
+    </script>
 </head>
 <body>
 
-    <header>
+    <header role="banner">
         <div class="header-inner">
             <div class="logo-wrap">
-                <div class="logo-mark">F</div>
+                <div class="logo-mark" aria-label="Founder's Resource Hub logo">F</div>
                 <div>
                     <div class="site-name">Founder's Resource Hub</div>
                     <div class="site-tagline">Empowering early-stage entrepreneurs</div>
@@ -23,7 +31,7 @@
             </div>
         </div>
     </header>
-<nav><ul><li><a href="index.html">Home</a></li><li><a href="tools.html">Tools &amp; Resources</a></li><li><a href="mindset.html" class="active">Founder Mindset</a></li><li><a href="glossary.html">Startup Glossary</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+<nav role="navigation" aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="tools.html">Tools &amp; Resources</a></li><li><a href="mindset.html" class="active">Founder Mindset</a></li><li><a href="glossary.html">Startup Glossary</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
 
     <div class="page-hero">
         <div class="page-hero-inner">
@@ -33,20 +41,20 @@
         </div>
     </div>
 
-    <main>
+    <main role="main">
 
         <!-- FEATURED VIDEO -->
         <section class="section">
             <div class="section-label">Featured Video</div>
             <h2 class="section-heading">Watch: The founder journey</h2>
             <p class="section-intro">This short video covers the core mindset shifts every first-time founder needs — from employee thinking to builder thinking.</p>
-            <!-- HTML5 video tag (required for project) -->
-            <video controls style="display:none;">
+            <!-- HTML5 video tag (required for project — uses a publicly available short sample video) -->
+            <video controls width="100%" style="max-width:760px;margin:0 auto 18px;display:block;border-radius:12px;box-shadow:0 8px 32px rgba(44,95,122,0.18);background:var(--dark-gray);" poster="">
                 <source src="video/founder-intro.mp4" type="video/mp4">
                 Your browser does not support the HTML5 video tag.
             </video>
 
-            <!-- YouTube embed -->
+            <!-- YouTube embed (full-length founder content) -->
             <div style="max-width:760px;margin:0 auto;border-radius:12px;overflow:hidden;box-shadow:0 8px 32px rgba(44,95,122,0.18);">
                 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
                     <iframe
@@ -106,7 +114,7 @@
 
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="footer-inner">
             <div class="footer-brand">
                 <div class="footer-logo"><div class="logo-mark" style="width:32px;height:32px;font-size:1rem;">F</div>Founder's Resource Hub</div>
